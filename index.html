@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog da Jojo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="container">
+      <h1>Blog da Jojo</h1>
+      <p>Um cantinho para compartilhar fotos e histórias.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="editor" aria-labelledby="titulo-editor">
+      <h2 id="titulo-editor">Nova publicação</h2>
+      <form id="form-post">
+        <label for="titulo-post">Título</label>
+        <input id="titulo-post" name="titulo" type="text" placeholder="Dê um título para sua publicação">
+
+        <label for="texto-post">Texto</label>
+        <textarea id="texto-post" name="texto" rows="4" placeholder="O que você gostaria de compartilhar?"></textarea>
+
+        <label for="imagem-post">Imagem</label>
+        <input id="imagem-post" name="imagem" type="file" accept="image/*">
+
+        <button type="submit">Publicar</button>
+        <p id="mensagem-form" class="mensagem" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="publicacoes" aria-labelledby="titulo-publicacoes">
+      <h2 id="titulo-publicacoes">Publicações</h2>
+      <div id="lista-posts"></div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Feito com carinho por Jojo.</p>
+  </footer>
+</body>
+</html>
